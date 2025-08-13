@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura de La Pintada, Colombia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FFFDD0, #F0F8FF); /* Suave degradado de amarillo claro a azul muy claro */
+            color: #333333; /* Color de texto más oscuro para contraste */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .main-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/jpeg;base64,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') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .main-header h1 {
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .section-title {
+            color: #0056B3; /* Azul más vibrante */
+            text-align: center;
+            font-weight: bold;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .card {
+            border: none; /* Eliminar borde */
+            border-radius: 15px; /* Bordes más redondeados */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.95); /* Fondo de tarjeta ligeramente transparente */
+        }
+        .card:hover {
+            transform: translateY(-8px); /* Efecto de elevación más notorio */
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .card-title {
+            color: #A52A2A; /* Marrón rojizo */
+            font-weight: bold;
+            font-size: 1.75rem;
+        }
+        .footer {
+            background-color: #2C3E50; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>La Pintada, Antioquia</h1>
+            <p class="lead">Un rincón de cultura, sabor y tradición en Colombia</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Sección de Cultura -->
+        <section id="cultura">
+            <h2 class="section-title">Cultura y Tradiciones</h2>
+            <div class="row">
+                <div class="col-md-7">
+                    <p>La cultura de La Pintada es un reflejo de la identidad antioqueña, pero con un carácter propio forjado por su clima cálido, su vocación turística y su vida en torno al río Cauca. Es una cultura alegre y extrovertida, acostumbrada a recibir visitantes de todas partes.</p>
+                    <p>Las tradiciones giran en torno a las fiestas patronales, los festivales de verano y los fines de semana, cuando el municipio cobra vida. La música popular, el vallenato y los ritmos tropicales son la banda sonora de sus calles. La pesca artesanal y las historias de los "barequeros" (mineros artesanales de oro) también forman parte del imaginario cultural del pueblo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/La_Pintada_-_Puente_sobre_el_r%C3%ADo_Cauca.jpg/1200px-La_Pintada_-_Puente_sobre_el_r%C3%ADo_Cauca.jpg" class="img-fluid rounded shadow" alt="Puente de La Pintada">
+                </div>
+            </div>
+        </section>
+
+        <div class="row mt-5">
+            <!-- Sección de Gastronomía -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Gastronomía: El Sabor del Río</h3>
+                        <p>El plato insignia de La Pintada es, sin duda, el <strong>Viudo de Pescado</strong>. Este plato es un sudado generoso de pescado de río (como bocachico o capaz), cocido lentamente con yuca, papa, plátano y mazorca. Se sirve tradicionalmente con hogao (salsa criolla) y arroz.</p>
+                        <p>Otros manjares que no te puedes perder son:</p>
+                        <ul>
+                            <li><strong>Sancocho de bagre:</strong> Una sopa robusta y llena de sabor.</li>
+                            <li><strong>Pescado frito:</strong> Crocante por fuera y suave por dentro, acompañado de patacones.</li>
+                            <li><strong>Frutas tropicales:</strong> Mangos, melones y maracuyás de la región, servidos en jugos frescos o postres.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Vestimenta -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Vestimenta: Comodidad para el Calor</h3>
+                        <p>Debido a su clima cálido, la vestimenta diaria en La Pintada es ligera y cómoda. Predominan las telas frescas como el algodón y el lino.</p>
+                        <ul>
+                            <li><strong>Hombres:</strong> Usan pantalones cortos (shorts), bermudas, camisetas y sandalias. Para protegerse del sol, es común el uso de sombreros y gorras.</li>
+                            <li><strong>Mujeres:</strong> Visten faldas, vestidos ligeros, blusas frescas y sandalias. Los colores vivos y estampados florales son muy populares.</li>
+                        </ul>
+                        <p>Para las <strong>Fiestas de la Antioqueñidad</strong> o eventos culturales, se adopta el traje típico antioqueño: el hombre con su sombrero aguadeño, poncho, carriel y machete; y la mujer con su falda larga y floreada, blusa blanca de arandelas y trenzas en el cabello.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Sección: Historia Detallada -->
+    <section id="historia-detallada" class="mt-5">
+        <h2 class="section-title">Historia Detallada</h2>
+        <div class="card">
+            <div class="card-body">
+                <p>La Pintada, aunque joven como municipio (erigido en 1997), tiene una rica historia que se remonta a mediados del siglo XIX. Nació como un caserío y corregimiento estratégico, un punto de encuentro y paso obligado para arrieros y comerciantes que transitaban entre el interior de Antioquia y el sur del país, especialmente hacia el Viejo Caldas. Su ubicación a orillas del río Cauca, uno de los más importantes de Colombia, le confirió un papel crucial como puerto fluvial y centro de intercambio comercial.</p>
+                <p>Durante décadas, su crecimiento estuvo ligado al comercio de productos agrícolas y a la minería artesanal de oro en las riberas del río. La construcción del puente sobre el río Cauca, una obra de ingeniería notable para su época, consolidó su importancia como nudo vial. La lucha por convertirse en municipio fue un proceso largo liderado por sus habitantes, quienes veían en la autonomía administrativa la clave para impulsar su desarrollo turístico y económico, logrando finalmente su objetivo a finales del siglo XX.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Economía Local -->
+    <section id="economia" class="mt-5">
+        <h2 class="section-title">Economía Local</h2>
+        <div class="card">
+            <div class="card-body">
+                <p>La economía de La Pintada se sustenta en tres pilares fundamentales: el turismo, el comercio y la agricultura.</p>
+                <ul>
+                    <li><strong>Turismo:</strong> Es el motor principal. La Pintada atrae a miles de visitantes cada año gracias a sus balnearios, hoteles, fincas de recreo y la posibilidad de disfrutar de deportes náuticos y de aventura en el río Cauca.</li>
+                    <li><strong>Comercio:</strong> Su ubicación estratégica en una vía nacional importante lo convierte en un centro comercial dinámico, con una gran variedad de establecimientos que atienden tanto a residentes como a viajeros.</li>
+                    <li><strong>Agricultura:</strong> A pesar de su vocación turística, la agricultura sigue siendo una actividad relevante. Se destacan los cultivos de mango, cítricos (naranja, limón), melón y otras frutas tropicales, que se benefician del clima cálido y los suelos fértiles de la región.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Festividades y Eventos -->
+    <section id="festividades" class="mt-5">
+        <h2 class="section-title">Festividades y Eventos</h2>
+        <div class="card">
+            <div class="card-body">
+                <p>La Pintada es un municipio que sabe celebrar. A lo largo del año, se realizan diversas festividades que reflejan su alegría y tradiciones:</p>
+                <ul>
+                    <li><strong>Fiestas del Mango y el Turismo:</strong> Son las festividades más importantes, celebradas generalmente a mediados de año. Incluyen conciertos, desfiles, actividades deportivas, reinado y muestras gastronómicas donde el mango es el protagonista.</li>
+                    <li><strong>Semana Santa:</strong> Se vive con gran fervor religioso, con procesiones y actos litúrgicos.</li>
+                    <li><strong>Fiestas Patronales:</strong> En honor a la Virgen del Carmen, patrona de los transportadores y pescadores, con actividades religiosas y culturales.</li>
+                    <li><strong>Eventos Deportivos:</strong> Dada su vocación turística y sus recursos naturales, La Pintada es sede frecuente de competencias de deportes náuticos, ciclismo y atletismo.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Atractivos Naturales y Ecoturismo -->
+    <section id="ecoturismo" class="mt-5">
+        <h2 class="section-title">Atractivos Naturales y Ecoturismo</h2>
+        <div class="card">
+            <div class="card-body">
+                <p>Más allá de sus balnearios, La Pintada ofrece paisajes naturales impresionantes y oportunidades para el ecoturismo:</p>
+                <ul>
+                    <li><strong>Río Cauca y Río Cartama:</strong> Ideales para la pesca, paseos en lancha y disfrutar de sus playas fluviales.</li>
+                    <li><strong>Miradores:</strong> Varios puntos elevados ofrecen vistas panorámicas espectaculares del cañón del río Cauca y las montañas circundantes.</li>
+                    <li><strong>Senderismo y Ciclismo:</strong> Rutas que atraviesan fincas cafeteras y frutales, permitiendo el contacto directo con la naturaleza y la vida rural.</li>
+                    <li><strong>Flora y Fauna:</strong> La región es rica en biodiversidad, con una variedad de aves y vegetación tropical.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Cómo Llegar -->
+    <section id="como-llegar" class="mt-5">
+        <h2 class="section-title">Cómo Llegar a La Pintada</h2>
+        <div class="card">
+            <div class="card-body">
+                <p>La Pintada es de fácil acceso gracias a su ubicación estratégica:</p>
+                <ul>
+                    <li><strong>Desde Medellín:</strong> Se llega por la Troncal del Café (vía a Caldas y La Pintada), un recorrido de aproximadamente 2 horas y 30 minutos en vehículo particular o bus intermunicipal.</li>
+                    <li><strong>Desde el Eje Cafetero:</strong> Conecta directamente por la misma Troncal del Café, siendo un punto de paso importante.</li>
+                    <li><strong>Transporte Público:</strong> Varias empresas de transporte ofrecen rutas frecuentes desde la Terminal del Sur de Medellín y otras ciudades cercanas.</li>
+                </ul>
+                <p>Las vías están en buen estado, lo que facilita el acceso y la convierte en un destino ideal para una escapada de fin de semana.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Página web generada como ejemplo cultural.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
